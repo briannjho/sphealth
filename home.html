@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Home</title>
+        <!--
+        
+        Template 2089 Meteor
+        
+        http://www.tooplate.com/view/2089-meteor
+        
+        -->
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/hero-slider.css">
+        <link rel="stylesheet" href="css/tooplate-style.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">      
+        <link rel="stylesheet" type="text/css" href="fonts2/font-awesome-4.7.0/css/font-awesome.min.css">
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="fonts2/Linearicons-Free-v1.0.0/icon-font.min.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <style>
+
+            #main-nav {
+                background-color: transparent;
+                background-image: none!important;
+                width: 100%;
+                margin-left: 3.6px;
+            }   .open .dropdown-toggle {
+
+                background-color: transparent !important;
+            }
+            .dropdown-menu li a {
+                color: #transparent !important;
+            }
+            .dropdown-menu li a:hover {
+                background-color: black !important;
+            }
+
+            .dropdown:hover {
+                background: transparent;
+            }
+
+            .dropdown {
+                background: transparent;
+            }
+
+            #main-nav {
+                background-color: transparent;
+                background-image: none!important;
+                width: 100%;
+                margin-left: 3.6px;
+            }   
+
+            .container-login100 {
+                width: 100%;  
+                min-height: 100vh;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                padding: 15px;
+
+                background-color: #ebebeb;
+            }
+
+
+            .wrap-login100 {
+                width: 560px;
+                background: #fff;
+                border-radius: 10px;
+                position: relative;
+            }
+
+
+            /*==================================================================
+            [ Form ]*/
+
+            .login100-form {
+                width: 100%;
+            }
+
+            .login100-form-title {
+                font-family: Raleway-Medium;
+                font-size: 30px;
+                color: #555555;
+                line-height: 1.2;
+                text-transform: uppercase;
+                text-align: left;
+
+                width: 100%;
+                display: block;
+            }
+
+
+
+            /*------------------------------------------------------------------
+            [ Input ]*/
+
+            .wrap-input100 {
+                width: 70%;
+                position: relative;
+                background-color: #fff;
+                border: 1px solid #e6e6e6;
+                border-radius: 50px;
+            }
+
+
+            /*---------------------------------------------*/
+            .input100 {
+                font-family: Raleway-Medium;
+                color: #555555;
+                line-height: 1.2;
+                font-size: 18px;
+
+                display: block;
+                width: 100%;
+                background: transparent;
+                height: 55px;
+                padding: 0 25px 0 25px;
+            }
+            /*------------------------------------------------------------------
+            [ Focus Input ]*/
+
+            .focus-input100 {
+                position: absolute;
+                display: block;
+                width: calc(100% + 2px);
+                height: calc(100% + 2px);
+                top: -1px;
+                left: -1px;
+                pointer-events: none;
+                border: 1px solid #57b846;
+                border-radius: 3px;
+
+                visibility: hidden;
+                opacity: 0;
+
+                -webkit-transition: all 0.4s;
+                -o-transition: all 0.4s;
+                -moz-transition: all 0.4s;
+                transition: all 0.4s;
+
+                -webkit-transform: scaleX(1.1) scaleY(1.3);
+                -moz-transform: scaleX(1.1) scaleY(1.3);
+                -ms-transform: scaleX(1.1) scaleY(1.3);
+                -o-transform: scaleX(1.1) scaleY(1.3);
+                transform: scaleX(1.1) scaleY(1.3);
+            }
+
+            .input100:focus + .focus-input100 {
+                visibility: visible;
+                opacity: 1;
+
+                -webkit-transform: scale(1);
+                -moz-transform: scale(1);
+                -ms-transform: scale(1);
+                -o-transform: scale(1);
+                transform: scale(1);
+            }
+
+            .eff-focus-selection {
+                visibility: visible;
+                opacity: 1;
+
+                -webkit-transform: scale(1);
+                -moz-transform: scale(1);
+                -ms-transform: scale(1);
+                -o-transform: scale(1);
+                transform: scale(1);
+            }
+
+            /*---------------------------------------------*/
+            .btn-show-pass {
+                font-size: 15px;
+                color: #999999;
+
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: flex;
+                align-items: center;
+                position: absolute;
+                height: 100%;
+                top: 0;
+                right: 12px;
+                padding: 0 5px;
+                cursor: pointer;
+                -webkit-transition: background 0.4s;
+                -o-transition: background 0.4s;
+                -moz-transition: background 0.4s;
+                transition: background 0.4s;
+            }
+
+            .btn-show-pass:hover {
+                color: #57b846;
+            }
+
+            .btn-show-pass.active {
+                color: #57b846;
+            }
+
+            /*==================================================================
+            [ Restyle Checkbox ]*/
+
+            .input-checkbox100 {
+                display: none;
+            }
+
+            .label-checkbox100 {
+                font-family: Raleway-Regular;
+                font-size: 13px;
+                color: #999999;
+                line-height: 1.4;
+
+                display: block;
+                position: relative;
+                padding-left: 26px;
+                cursor: pointer;
+            }
+
+            .label-checkbox100::before {
+                content: "\f00c";
+                font-family: FontAwesome;
+                font-size: 13px;
+                color: transparent;
+
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                width: 18px;
+                height: 18px;
+                border-radius: 2px;
+                background: #fff;
+                border: 1px solid #e6e6e6;
+                left: 0;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                -moz-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                -o-transform: translateY(-50%);
+                transform: translateY(-50%);
+            }
+
+            .input-checkbox100:checked + .label-checkbox100::before {
+                color: #57b846;
+            }
+
+            input {
+                outline: none;
+                border: none;
+            }
+
+            textarea {
+                outline: none;
+                border: none;
+            }
+
+            textarea:focus, input:focus {
+                border-color: transparent !important;
+            }
+
+            input:focus::-webkit-input-placeholder { color:transparent; }
+            input:focus:-moz-placeholder { color:transparent; }
+            input:focus::-moz-placeholder { color:transparent; }
+            input:focus:-ms-input-placeholder { color:transparent; }
+
+            textarea:focus::-webkit-input-placeholder { color:transparent; }
+            textarea:focus:-moz-placeholder { color:transparent; }
+            textarea:focus::-moz-placeholder { color:transparent; }
+            textarea:focus:-ms-input-placeholder { color:transparent; }
+
+            input::-webkit-input-placeholder { color: #999999;}
+            input:-moz-placeholder { color: #999999;}
+            input::-moz-placeholder { color: #999999;}
+            input:-ms-input-placeholder { color: #999999;}
+
+            textarea::-webkit-input-placeholder { color: #999999;}
+            textarea:-moz-placeholder { color: #999999;}
+            textarea::-moz-placeholder { color: #999999;}
+            textarea:-ms-input-placeholder { color: #999999;}
+
+            #fh5co-footer {
+                background: #efefef;
+                width:100%;
+
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="page">
+            <div class="header" id="nav">
+                <div class="container">
+                    <nav class="navbar navbar-inverse" role="navigation">
+                        <div class="navbar-header" >
+                            <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a href="#" class="navbar-brand scroll-top">
+                                <div class="logo" >
+                                    <img src="img/sp_health2.png" style="margin-top:-47px"> 
+                                </div>
+                            </a>
+                        </div>
+                        <!--/.navbar-header-->
+                        <div id="main-nav" class="collapse navbar-collapse"  >
+                            <ul class="nav navbar-nav" >
+                                <li><a href="home.html" class="scroll-top" style="font-weight:bold"><text style="color: black">Home</text></a></li>
+                                <li><a href="about.html" style="font-weight:bold"><text style="color: black">About Us</text></a></li>
+                                <li><a href="appointment.html" style="font-weight:bold"><text style="color: black">Appointment</text></a></li>
+                                <li><a href="healthylifestyle.html" style="font-weight:bold" ><text style="color: black">Healthy Lifestyle</text></a></li>
+                                <li><a href="contactus.html" style="font-weight:bold"><text style="color: black">Contact Us</text></a></li>
+                            </ul>
+                        </div>
+                        <!--/.navbar-collapse-->
+                    </nav>
+                    <!--/.navbar-->
+                </div>
+                <!--/.container-->
+            </div>
+            <!--/.header-->
+
+
+            <section class="cd-hero">
+                <ul class="cd-hero-slider autoplay">  
+                    <!-- 
+                        <ul class="cd-hero-slider autoplay"> for slider auto play 
+                        <ul class="cd-hero-slider"> for disabled auto play
+                    -->
+                    <li class="selected first-slide">
+                        <div class="cd-full-width">
+                            <div class="tm-slide-content-div slide-caption">
+                                <span  style="color: black">Welcome To</span>
+                                <h2  style="color: black">SP Health</h2>
+                                <p  style="color: black"> Ready healthcare in just a few clicks.</p>
+                                <div class="primary-button">
+                                    <a href="#" class="scroll-link" data-id="about">Discover More</a>
+                                </div>                           
+                            </div>                   
+                        </div> <!-- .cd-full-width -->
+                    </li>
+
+                    <li class="second-slide">
+                        <div class="cd-full-width">
+                            <div class="tm-slide-content-div slide-caption">
+                                <h2  style="color: black">Healthy Lifestyles</h2>
+                                <p  style="color: black">Start adopting a healthy lifestyle by viewing the different diets and workouts here</p>
+                                <div class="primary-button">
+                                    <a href="healthylifestyle.php">Read More</a>
+                                </div>                        
+                            </div>                     
+                        </div> <!-- .cd-full-width -->
+                    </li>
+
+                    <li class="third-slide">
+                        <div class="cd-full-width">
+                            <div class="tm-slide-content-div slide-caption">
+                                <span style="color: black">Book</span>
+                                <h2 style="color: black">Appointments Now</h2>
+                                <p style="color: black">Check your health status now</p>
+                                <div class="primary-button">
+                                    <a href="appointment.php">View Details</a>
+                                </div>                           
+                            </div>                         
+                        </div> <!-- .cd-full-width -->
+                    </li>
+                    <!--            <li class="fourth-slide">
+                                    <div class="cd-full-width">
+                                        <div class="tm-slide-content-div slide-caption">
+                                            <span>Visit our</span>
+                                            <h2>Appointments</h2>
+                                            <p>Check your health status by booking an appointment with us now!</p>
+                                            <div class="primary-button">
+                                                <a href="healthylifestyle.php">View Details</a>
+                                            </div>                           
+                                        </div>                         
+                                    </div>  .cd-full-width 
+                                </li>-->
+                </ul> <!-- .cd-hero-slider -->
+
+                <div class="cd-slider-nav">
+                    <nav>
+                        <span class="cd-marker item-1"></span>
+
+                        <ul>
+                            <li class="selected"><a href="#0"></a></li>
+                            <li><a href="#0"></a></li>
+                            <li><a href="#0"></a></li>                        
+                        </ul>
+                    </nav> 
+                </div> <!-- .cd-slider-nav -->
+            </section> <!-- .cd-hero -->
+
+            <div id="embedded-video" style="background: #7eaede">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="left-text">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/WtuXrrEZsAg" 
+                                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="right-text">
+                                <h4>Healthcare in Singapore</h4>
+                                <p></p>
+                                <p>Singapore is a small city-state that likely isn't as well known to you as some of the other countries we've discussed before. But they've got one of the most fascinating health care systems around. It's cheap, it's pretty much universal, and it achieves some amazingly strong outcomes. It's also much different in structure than other systems we've covered before. Watch and learn - you'll be glad you did.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="about" class="page-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="section-heading">
+                                <h4>What We Offer</h4>
+                                <div class="line-dec"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 col-xs-12" style="margin-left: 12.5%">
+                            <div class="service-item first-service">
+                                <div class="icon"></div>
+                                <h4>Affordable Health Care</h4>
+                                <p style="font-size: 0.8em">We offer affordable full body health checkups. Checkup starting from S$50 per session</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="service-item second-service">
+                                <div class="icon"></div>
+                                <h4>Finding the Right Doctor</h4>
+                                <p style="font-size: 0.8em">Visit, Check or Call us, our friendly staff will attend to you and find the most suitable doctor for your needs</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="service-item third-service" >
+                                <div class="icon"></div>
+                                <h4>24/7 Customer Support</h4>
+                                <p style="font-size: 0.8em">We provide 24/7 access to medical advice and further information about your health care needs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="bmi-calculator">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="left-text">
+                                <h4>Body Mass Index (BMI) Calculator</h4>
+                                <p>Are you in the healthy range? Use this tool to calculate your<br>Body Mass Index (BMI)now to know your health risk.</p>
+
+                                <form class="login100-form validate-form flex-sb flex-w">                                                                                                          
+                                    <div class="wrap-input100 validate-input m-b-36">
+                                        <input class="input100" type="text"  id="weight" required placeholder="Enter Your Weight (KG)" required>
+                                        <span class="focus-input100"></span>
+                                    </div>
+<!--                                    <span class="txt1 p-b-11" style="margin-bottom: 5%;">
+                                        Height
+                                    </span>
+                                    -->
+                                    <div class="wrap-input100 validate-input m-b-12" style="margin-top: 5%">                                        
+                                        <input class="input100" type="text" id="height" required placeholder="Enter Your Height (CM)" required >
+                                        <span class="focus-input100"></span>
+                                    </div>
+
+                                    <!--<input class="primary-button" type="button" onclick="calculatebmi()" value="Calculate">-->
+
+                                    <div class="primary-button" style="margin-top: 4%; " >
+                                        <a onclick="calculatebmi()">Calculate</a>
+                                    </div>
+
+                                </form>
+
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="right-image">
+                                <img id="underweight" src="images/underweight.png" style="width: 200px;margin-left:28%;margin-top: -25%; position: absolute; visibility: hidden">
+                                <img id="normal" src="images/normal.png" style="width: 200px;margin-left:28%;margin-top: -25%; position: absolute; visibility: hidden">
+                                <img id="overweight" src="images/overweight.png" style="width: 200px;margin-left:28%;margin-top: -25%; position: absolute; visibility: hidden">
+                                <img id="obease" src="images/obease.png" style="width: 200px;margin-left:28%;margin-top: -25%; position: absolute; visibility: hidden">
+                                <div id="bmivalue"  style="font-size: 120%; margin-left: 30%;;margin-top: 17%;"></div>
+                                <div id="status"  style="font-size: 150%; margin-left: 30%; margin-top: 5%; font-weight: bold"></div>
+                                <div id="warning"  style="font-size: 120%; margin-left: 30%; margin-top: 5%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div id="blog" class="page-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="section-heading">
+                                <h4 style="color: black">Latest News</h4>
+                                <div class="line-dec" style="background: black;" ></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="blog-item b1">
+                                <div class="thumb"> <a href="http://www.sgh.com.sg/news/patient-care/when-no-body-looks-perfect">
+                                        <img src="img/news.jpg" alt="">
+                                        <div class="text-content">
+                                            <h4>When No Body Looks Perfect</h4>
+                                            <span>Posted: <em>The Sunday Times</em>  /  Date: <em>16 June 2019</em>  /  Category: <em>Health</em></span>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="blog-item second-blog b2">
+                                <div class="thumb"><a href="http://www.sgh.com.sg/news/patient-care/doctors-can-burnout-too">
+                                        <img src="img/news2.jpg" alt="">
+                                        <div class="text-content">
+                                            <h4>Doctors can Burn Out too</h4>
+                                            <span>Posted: <em>Strait Times</em>  /  Date: <em>03 Jun 2019</em>  /  Category: <em>Health</em></span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="blog-item b3">
+                                <div class="thumb"><a href="http://www.sgh.com.sg/news/patient-care/managing-chronic-pain">
+                                        <img src="img/news3.jpg" alt="">
+                                        <div class="text-content">
+                                            <h4>Managing Chronic Pain</h4>
+                                            <span>Posted: <em>Strait Times</em>  /  Date: <em>20 May 2019</em>  /  Category: <em>Health</em></span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="blog-item b1">
+                                    <div class="thumb"><a href="http://www.sgh.com.sg/news/others/veteran-social-workers-honoured-at-70th-anniversary-celebrations-of-medical-social-service">
+                                            <img src="img/news4.jpg" alt="">
+                                            <div class="text-content">
+                                                <h4>Veteran Social Workers Honored</h4>
+                                                <span>Posted: <em>Strait Times</em>  /  Date: <em>15 March 2019</em>  /  Category: <em>Health</em></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="blog-item second-blog b2">
+                                    <div class="thumb"><a href="http://www.sgh.com.sg/news/patient-care/A+-can-give-to-B">
+                                            <img src="img/news5.jpg" alt="">
+                                            <div class="text-content">
+                                                <h4>A+ Can Give to B+</h4>
+                                                <span>Posted: <em>Singapore Health</em>  /  Date: <em>29 Jan 2019</em>  /  Category: <em>Health</em></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="blog-item b3">
+                                    <div class="thumb"><a href="http://www.sgh.com.sg/news/others/ketogenic-diet-fad-or-fab">
+                                            <img src="img/news6.jpg" alt="">
+                                            <div class="text-content">
+                                                <h4>Ketogenic diet: fad or fab?</h4>
+                                                <span>Posted: <em>Singapore Health</em>  /  Date: <em>1 February 2019</em>  /  Category: <em>Health</em></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <footer id="fh5co-footer" role="contentinfo">
+                <div class="container">
+                    <div class="row row-pb-md">
+                        <div class='col-md-1'></div>
+                        <div class="col-md-4 fh5co-widget">
+                            <h3>SP Health </h3>
+                            <p style="font-weight:bold">Founded in 2019.SP Health is a leading medical health center, earning our patient's trust with exceptional medical talent and technology</p>
+                            <p style="font-weight:bold">Staff by a team of 4 dedicated students from Singapore Polytechnic. Our team is highly skilled in the areas we serve.</p>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-xs-6 col-md-push-1">
+                            <ul class="fh5co-footer-links">
+                                <li><a href="home.php">Home</a></li>
+                                <li><a href="about.php">About Us</a></li>
+                                <li><a href="appointment.php">Appointment</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-3 col-sm-4 col-xs-6 col-md-push-1">
+                            <ul class="fh5co-footer-links">
+                                <li><a href="healthylifestyle.php">Healthy Lifestyle</a></li>
+                                <li><a href="contactus.php">Contact Us</a></li>
+                                <li><a href="profile_page.php">Profile</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
+                            <ul class="fh5co-footer-links">
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+    </body>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+                                            $(document).ready(function () {
+                                                // navigation click actions 
+                                                $('.scroll-link').on('click', function (event) {
+                                                    event.preventDefault();
+                                                    var sectionID = $(this).attr("data-id");
+                                                    scrollToID('#' + sectionID, 750);
+                                                });
+                                                // scroll to top action
+                                                $('.scroll-top').on('click', function (event) {
+                                                    event.preventDefault();
+                                                    $('html, body').animate({scrollTop: 0}, 'slow');
+                                                });
+                                                // mobile nav toggle
+                                                $('#nav-toggle').on('click', function (event) {
+                                                    event.preventDefault();
+                                                    $('#main-nav').toggleClass("open");
+                                                });
+                                            });
+                                            // scroll function
+                                            function scrollToID(id, speed) {
+                                                var offSet = 50;
+                                                var targetOffset = $(id).offset().top - offSet;
+                                                var mainNav = $('#main-nav');
+                                                $('html,body').animate({scrollTop: targetOffset}, speed);
+                                                if (mainNav.hasClass("open")) {
+                                                    mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+                                                    mainNav.removeClass("open");
+                                                }
+                                            }
+                                            if (typeof console === "undefined") {
+                                                console = {
+                                                    log: function () { }
+                                                };
+                                            }
+
+    </script>
+
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("nav").style.top = "0";
+            } else {
+                document.getElementById("nav").style.top = "-15%";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+
+    <script>
+        function calculatebmi() {
+            var height = document.getElementById('height').value;
+            var weight = document.getElementById('weight').value;
+
+            var finalheight = (height / 100) ^ 2;
+            var bmi = weight / finalheight;
+            var bmivalue;
+            var status;
+            var warning;
+            var overweight = document.getElementById('overweight');
+            var normal = document.getElementById('normal');
+            var underweight = document.getElementById('underweight');
+            var obease = document.getElementById('obease');
+
+
+            if (height === "" || weight === "") {
+                bmivalue = document.getElementById('bmivalue').innerHTML = "Please fill in the blanks!"
+
+            } else {
+
+                if (bmi < 19) {
+                    bmivalue = document.getElementById('bmivalue').innerHTML = "Your BMI: " + bmi;
+                    status = document.getElementById('status').innerHTML = "Underweight";
+                    warning = document.getElementById('warning').innerHTML = "You are at risk of nutritional deficiency diseases and osteoporosis. Seek medical advice if needed and have a balanced meal.";
+                    underweight.style.visibility = "visible";
+                    overweight.style.visibility = "hidden";
+                    normal.style.visibility = "hidden";
+                    obease.style.visibility = "hidden";
+                } else if (bmi > 25 && bmi < 30) {
+                    bmivalue = document.getElementById('bmivalue').innerHTML = "Your BMI: " + bmi;
+                    status = document.getElementById('status').innerHTML = "Overweight";
+                    warning = document.getElementById('warning').innerHTML = "Oh no! You have moderate risk of heart diseases. Aim to reduce your caloric intake and increase physical activities.";
+                    overweight.style.visibility = "visible";
+                    normal.style.visibility = "hidden";
+                    underweight.style.visibility = "hidden";
+                    obease.style.visibility = "hidden";
+
+                } else if (bmi > 30) {
+                    bmivalue = document.getElementById('bmivalue').innerHTML = "Your BMI: " + bmi;
+                    status = document.getElementById('status').innerHTML = "Obease";
+                    warning = document.getElementById('warning').innerHTML = "Watch out! You are at a high risk of heart diseases. Aim to reduce your caloric intake and increase physical activities. Attend regular health screenings to keep your conditions in check.";
+                    obease.style.visibility = "visible";
+                    normal.style.visibility = "hidden";
+                    underweight.style.visibility = "hidden";
+                    overweight.style.visibility = "hidden";
+
+                } else {
+                    bmivalue = document.getElementById('bmivalue').innerHTML = "Your BMI: " + bmi;
+                    status = document.getElementById('status').innerHTML = "Normal";
+                    warning = document.getElementById('warning').innerHTML = "Good! You are in the healthy range and stand a low risk of heart disease.";
+                    normal.style.visibility = "visible";
+                    overweight.style.visibility = "hidden";
+                    underweight.style.visibility = "hidden";
+                    obease.style.visibility = "hidden";
+                }
+            }
+        }
+    </script>
+</body>
+</html>

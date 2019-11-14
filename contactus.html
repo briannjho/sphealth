@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<?php require_once './accountprocess.php'; ?>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Contact Us</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Free HTML5 Website Template by gettemplates.co" />
+        <meta name="keywords" conte2nt="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+        <meta name="author" content="gettemplates.co" />
+
+        <!-- 
+        //////////////////////////////////////////////////////
+
+        FREE HTML5 TEMPLATE 
+        DESIGNED & DEVELOPED by FreeHTML5.co
+                
+        Website: 		http://freehtml5.co/
+        Email: 			info@freehtml5.co
+        Twitter: 		http://twitter.com/fh5co
+        Facebook: 		https://www.facebook.com/fh5co
+
+        //////////////////////////////////////////////////////
+        -->
+
+        <!-- Facebook and Twitter integration -->
+        <meta property="og:title" content=""/>
+        <meta property="og:image" content=""/>
+        <meta property="og:url" content=""/>
+        <meta property="og:site_name" content=""/>
+        <meta property="og:description" content=""/>
+        <meta name="twitter:title" content="" />
+        <meta name="twitter:image" content="" />
+        <meta name="twitter:url" content="" />
+        <meta name="twitter:card" content="" />
+
+        <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> -->
+        <!-- <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i" rel="stylesheet"> -->
+
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="css2/animate.css">
+        <!-- Icomoon Icon Fonts-->
+        <link rel="stylesheet" href="css2/icomoon.css">
+        <!-- Bootstrap  -->
+        <link rel="stylesheet" href="css2/bootstrap.css">
+
+        <!-- Flexslider  -->
+        <link rel="stylesheet" href="css2/flexslider.css">
+
+        <!-- Owl Carousel  -->
+        <link rel="stylesheet" href="css2/owl.carousel.min.css">
+        <link rel="stylesheet" href="css2/owl.theme.default.min.css">
+
+        <!-- Theme style  -->
+        <link rel="stylesheet" href="css2/style.css">
+
+        <!-- Modernizr JS -->
+        <script src="js2/modernizr-2.6.2.min.js"></script>
+        <!-- FOR IE9 below -->
+        <!--[if lt IE 9]>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+
+        <link rel="stylesheet"  href="css/tooplate-style.css">
+        <link rel="stylesheet"  href="css2/style.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">      
+        <link rel="stylesheet" type="text/css" href="fonts2/font-awesome-4.7.0/css/font-awesome.min.css">
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="fonts2/Linearicons-Free-v1.0.0/icon-font.min.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <style>
+            #main-nav {
+                background: white;
+                background-image: none!important;
+                width: 100%;
+            }
+
+            .container-login100-form-btn {
+                width: 100%;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .login100-form-btn {
+                font-family: Raleway-Bold;
+                font-size: 16px;
+                color: #fff;
+                line-height: 1.2;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0 20px;
+                min-width: 150px;
+                height: 55px;
+                background-color: #333333;
+                border-radius: 27px;
+
+                -webkit-transition: all 0.4s;
+                -o-transition: all 0.4s;
+                -moz-transition: all 0.4s;
+                transition: all 0.4s;
+            }
+
+            .login100-form-btn:hover {
+                background-color: orange;
+            }
+
+            .container-contact100 {
+                width: 100%;  
+                min-height: 100vh;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                padding: 15px;
+                background: transparent;
+                position: relative;
+                z-index: 1;
+            }
+
+            .contact100-map {
+                position: absolute;
+                z-index: -2;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+            }
+
+            .wrap-contact100 {
+                width: 670px;
+                background: #fff;
+                border-radius: 10px;
+                overflow: hidden;
+                position: relative;
+            }
+
+            /*==================================================================
+            [ Title form ]*/
+            .contact100-form-title {
+                width: 100%;
+                position: relative;
+                z-index: 1;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: center;
+
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+
+                padding: 64px 15px 64px 15px;
+            }
+
+            .contact100-form-title-1 {
+                font-family: Poppins-Bold;
+                font-size: 20px;
+                color: #fff;
+                line-height: 1.2;
+                text-align: center;
+                padding-bottom: 7px;
+                z-index: 11;
+            }
+
+            .contact100-form-title-2 {
+                font-family: Poppins-Regular;
+                font-size: 15px;
+                color: #fff;
+                line-height: 1.5;
+                text-align: center;
+                z-index: 11;
+            }
+
+            .contact100-form-title::after {
+                content: "";
+                display: block;
+                position: absolute;
+                z-index: 1;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background-color: rgba(54,84,99,0.7);
+            }
+
+
+
+
+            /*==================================================================
+            [ Form ]*/
+
+            .contact100-form {
+                width: 100%;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding: 43px 88px 57px 190px;
+            }
+
+
+            /*------------------------------------------------------------------
+            [ Input ]*/
+
+            .wrap-input100 {
+                width: 100%;
+                position: relative;
+                border-bottom: 1px solid #b2b2b2;
+                margin-bottom: 26px;
+            }
+
+            .label-input100 {
+                font-family: Poppins-Regular;
+                font-size: 15px;
+                color: #808080;
+                line-height: 1.2;
+                text-align: right;
+
+                position: absolute;
+                top: 14px;
+                left: -105px;
+                width: 80px;
+
+            }
+
+            /*---------------------------------------------*/
+            .input100 {
+                font-family: Poppins-Regular;
+                font-size: 15px;
+                color: #555555;
+                line-height: 1.2;
+
+                display: block;
+                width: 100%;
+                background: transparent;
+                padding: 0 5px;
+            }
+
+            .focus-input100 {
+                position: absolute;
+                display: block;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                pointer-events: none;
+            }
+
+            .focus-input100::before {
+                content: "";
+                display: block;
+                position: absolute;
+                bottom: -1px;
+                left: 0;
+                width: 0;
+                height: 1px;
+
+                -webkit-transition: all 0.6s;
+                -o-transition: all 0.6s;
+                -moz-transition: all 0.6s;
+                transition: all 0.6s;
+
+                background: #57b846;
+            }
+
+
+            /*---------------------------------------------*/
+            input.input100 {
+                height: 45px;
+            }
+
+
+            textarea.input100 {
+                min-height: 115px;
+                padding-top: 14px;
+                padding-bottom: 13px;
+            }
+
+
+            .input100:focus + .focus-input100::before {
+                width: 100%;
+            }
+
+            .has-val.input100 + .focus-input100::before {
+                width: 100%;
+            }
+
+
+            /*------------------------------------------------------------------
+            [ Button ]*/
+            .container-contact100-form-btn {
+                width: 100%;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: flex;
+                flex-wrap: wrap;
+                padding-top: 8px;
+            }
+
+            .contact100-form-btn {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0 20px;
+                min-width: 160px;
+                height: 50px;
+                background-color: #57b846;
+                border-radius: 25px;
+
+                font-family: Poppins-Regular;
+                font-size: 16px;
+                color: #fff;
+                line-height: 1.2;
+
+                -webkit-transition: all 0.4s;
+                -o-transition: all 0.4s;
+                -moz-transition: all 0.4s;
+                transition: all 0.4s;
+            }
+
+            .contact100-form-btn i {
+                -webkit-transition: all 0.4s;
+                -o-transition: all 0.4s;
+                -moz-transition: all 0.4s;
+                transition: all 0.4s;
+            }
+
+            .contact100-form-btn:hover {
+                background-color: #333333;
+            }
+
+            .contact100-form-btn:hover i {
+                -webkit-transform: translateX(10px);
+                -moz-transform: translateX(10px);
+                -ms-transform: translateX(10px);
+                -o-transform: translateX(10px);
+                transform: translateX(10px);
+            }
+
+
+            /*------------------------------------------------------------------
+            [ Responsive ]*/
+
+            @media (max-width: 576px) {
+                .contact100-form {
+                    padding: 43px 15px 57px 117px;
+                }
+            }
+
+            @media (max-width: 480px) {
+                .contact100-form {
+                    padding: 43px 15px 57px 15px;
+                }
+
+                .label-input100 {
+                    text-align: left;
+                    position: unset;
+                    top: unset;
+                    left: unset;
+                    width: 100%;
+                    padding: 0 5px;
+                }
+            }
+
+            /*---------------------------------------------*/
+            input {
+                outline: none;
+                border: none;
+            }
+
+            input[type="number"] {
+                -moz-appearance: textfield;
+                appearance: none;
+                -webkit-appearance: none;
+            }
+
+            input[type="number"]::-webkit-outer-spin-button,
+            input[type="number"]::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+            }
+
+            textarea {
+                outline: none;
+                border: none;
+            }
+
+            textarea:focus, input:focus {
+                border-color: transparent !important;
+            }
+
+            input:focus::-webkit-input-placeholder { color:transparent; }
+            input:focus:-moz-placeholder { color:transparent; }
+            input:focus::-moz-placeholder { color:transparent; }
+            input:focus:-ms-input-placeholder { color:transparent; }
+
+            textarea:focus::-webkit-input-placeholder { color:transparent; }
+            textarea:focus:-moz-placeholder { color:transparent; }
+            textarea:focus::-moz-placeholder { color:transparent; }
+            textarea:focus:-ms-input-placeholder { color:transparent; }
+
+            input::-webkit-input-placeholder {color: #999999;}
+            input:-moz-placeholder {color: #999999;}
+            input::-moz-placeholder {color: #999999;}
+            input:-ms-input-placeholder {color: #999999;}
+
+            textarea::-webkit-input-placeholder {color: #999999;}
+            textarea:-moz-placeholder {color: #999999;}
+            textarea::-moz-placeholder {color: #999999;}
+            textarea:-ms-input-placeholder {color: #999999;}
+
+            /*---------------------------------------------*/
+            button {
+                outline: none !important;
+                border: none;
+                background: transparent;
+            }
+
+            button:hover {
+                cursor: pointer;
+            }
+
+            p{
+                font-weight: bold;
+            }
+
+            a:hover{
+                color: red;
+            }
+
+        </style>
+    </head>
+    <div id="page">
+        <div class="header" id="nav">
+            <div class="container">
+                <nav class="navbar navbar-inverse" role="navigation">
+                    <div class="navbar-header">
+                        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="#" class="navbar-brand scroll-top">
+                            <div class="logo" style="margin-top:15%">
+                                <a href="home.php">
+                                    <img src="img/sp_health2.png">
+                                </a>        
+                            </div>
+                        </a>
+                    </div>
+                    <!--/.navbar-header-->
+                    <div id="main-nav" class="collapse navbar-collapse" >
+                        <ul class="nav navbar-nav" >
+                            <li><a href="home.html" class="scroll-top" style="font-weight:bold"><text style="color: black">Home</text></a></li>
+                            <li><a href="about.html" style="font-weight:bold"><text style="color: black">About Us</text></a></li>
+                            <li><a href="appointment.html" style="font-weight:bold"><text style="color: black">Appointment</text></a></li>
+                            <li><a href="healthylifestyle.html" style="font-weight:bold" ><text style="color: black">Healthy Lifestyle</text></a></li>
+                            <li><a href="contactus.html" style="font-weight:bold"><text style="color: black">Contact Us</text></a></li>
+                        </ul>
+                    </div>
+                    <!--/.navbar-collapse-->
+                </nav>
+                <!--/.navbar-->
+            </div>
+            <!--/.container-->
+        </div>
+
+        <!--           <header id="fh5co-header" class="fh5co-cover fh5co-cover-sm" role="banner" style="background-image:url(images/customer_service.png)">
+                       <div class="overlay"></div>
+                       <div class="container">
+                           <div class="row">
+                               <div class="col-md-8 col-md-offset-2 text-center">
+                                   <div class="display-t">
+                                       <div class="display-tc animate-box" data-animate-effect="fadeIn">
+                                           <h1>Contact Us</h1>
+                                           <h2></h2>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </header>-->
+
+        <div class="section-heading" style="margin-top: 10%">
+            <h1 style="text-align: center; font-weight: bold">Contact Us</h1>
+            <div class="line-dec"></div>
+        </div>
+        <div id="fh5co-about" style="margin-top: 2%;">
+            <div class="row animate-box">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 col-xs-12" style="margin-left: 9.5%">
+                            <div class="service-item fifth-service" style="width: 450px; height: 300px">
+                                <div class="icon"></div>
+                                <p></p>
+                                <h4>Our Hot-line</h4>
+                                <p>
+                                    General Enquires (24 Hrs) 
+                                </p>
+                                <p>
+                                    <a href="tel://123456789">
+                                        Tel: +65 6775 1133
+                                    </a>
+                                </p>
+                                <p>
+                                    <a href="mailto:sphealth_csad@yahoo.com">
+                                        Email: sphealth_csad@yahoo.com
+                                    </a>
+                                </p>                                   
+
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12" style="margin-left: 15%">
+                            <div class="service-item sixth-service" style="width: 450px;height: 300px" onclick="document.getElementById('id01').style.display = 'block'">
+                                <div class="icon"></div>
+                                <p></p>
+                                <h4>Contact Customer Support</h4>
+                                <p>
+                                    Our customer support services are the best in the business, with a 99% customer satisfaction rating.
+                                    They're standing by to help you.
+                                </p> 
+                                <p>
+                                    Click Here to Contact for Support!
+                                </p>
+                                <div id="id01" class="w3-modal">
+                                    <div class="w3-modal-content w3-card-4" style="width: 40%">
+                                        <div class="container-contact100">
+
+                                            <div class="wrap-contact100" style="margin-top :-1%">
+                                                <div class="contact100-form-title" style="background-image: url(images2/bg-01.jpg)">
+                                                    <span class="contact100-form-title-1">
+                                                        Contact Us
+                                                    </span>
+
+                                                    <span class="contact100-form-title-2">
+                                                        Feel free to drop us a message below!
+                                                    </span>
+                                                </div>
+
+                                                <form class="contact100-form validate-form" method="post" action="contactus.php">
+                                                    <div class="wrap-input100 validate-input">
+                                                        <span class="label-input100">Full Name:</span>
+                                                        <input class="input100" type="text" name="fullname" placeholder="Enter Full Name" required>
+                                                        <span class="focus-input100"></span>
+                                                    </div>
+
+                                                    <div class="wrap-input100 validate-input">
+                                                        <span class="label-input100">Email:</span>
+                                                        <input class="input100" type="email" name="email" placeholder="Enter Email Address" required>
+                                                        <span class="focus-input100"></span>
+                                                    </div>
+
+                                                    <div class="wrap-input100 validate-input">
+                                                        <span class="label-input100">Phone:</span>
+                                                        <input class="input100" type="text" name="phone" placeholder="Enter Phone Number" required>
+                                                        <span class="focus-input100"></span>
+                                                    </div>
+                                                    <div class="wrap-input100 validate-input">
+                                                        <span class="label-input100">Subject:</span>
+                                                        <input class="input100" type="text" name="subject" placeholder="Enter Subject" required>
+                                                        <span class="focus-input100"></span>
+                                                    </div>
+
+                                                    <div class="wrap-input100 validate-input">
+                                                        <span class="label-input100">Message:</span>
+                                                        <textarea class="input100" name="message" placeholder="Your Comment..." required></textarea>
+                                                        <span class="focus-input100"></span>
+                                                    </div>
+
+                                                    <div class="container-contact100-form-btn">
+                                                        <button class="contact100-form-btn" type="submit" name="contact">
+                                                            <span>
+                                                                Submit
+                                                                <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row"  style="margin-left: 22.2%; margin-top: 2.5%">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="service-item seventh-service" style="width: 600px; height: 500px; ">
+                                <div class="icon"></div>
+                                <h4>Our Location</h4>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7977.551429852371!2d103.777501!3d1.309877!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa9545dd23993859e!2sSingapore+Polytechnic!5e0!3m2!1sen!2ssg!4v1565415916295!5m2!1sen!2ssg" width="100%" height="80%" frameborder="1" style="border:0" allowfullscreen></iframe>                </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+     <footer id="fh5co-footer" role="contentinfo">
+            <div class="container">
+                <div class="row row-pb-md">
+                    <div class='col-md-1'></div>
+                    <div class="col-md-4 fh5co-widget">
+                        <h3>SP Health </h3>
+                        <p>Founded in 2019.SP Health is a leading medical health center, earning our patient's trust with exceptional medical talent and technology</p>
+                        <p>Staff by a team of 4 dedicated students from Singapore Polytechnic. Our team is highly skilled in the areas we serve.</p>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6 col-md-push-1">
+                        <ul class="fh5co-footer-links">
+                            <li><a href="home.php">Home</a></li>
+                            <li><a href="about.php">About Us</a></li>
+                            <li><a href="appointment.php">Appointment</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3 col-sm-4 col-xs-6 col-md-push-1">
+                        <ul class="fh5co-footer-links">
+                            <li><a href="healthylifestyle.php">Healthy Lifestyle</a></li>
+                            <li><a href="contactus.php">Contact Us</a></li>
+                            <li><a href="profile_page.php">Profile</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
+                        <ul class="fh5co-footer-links">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+</body>
+<div class="gototop js-top">
+    <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+</div>
+
+<!-- jQuery -->
+<script src="js2/jquery.min.js"></script>
+<!-- jQuery Easing -->
+<script src="js2/jquery.easing.1.3.js"></script>
+<!-- Bootstrap -->
+<script src="js2/bootstrap.min.js"></script>
+<!-- Waypoints -->
+<script src="js2/jquery.waypoints.min.js"></script>
+<!-- Carousel -->
+<script src="js2/owl.carousel.min.js"></script>
+<!-- countTo -->
+<script src="js2/jquery.countTo.js"></script>
+<!-- Flexslider -->
+<script src="js2/jquery.flexslider-min.js"></script>
+
+<!-- Main -->
+<script src="js2/main.js"></script>
+
+<script>
+                                // Get the modal
+                                var modal = document.getElementById('id01');
+
+                                // When the user clicks anywhere outside of the modal, close it
+                                window.onclick = function (event) {
+                                    if (event.target == modal) {
+                                        modal.style.display = "none";
+                                    }
+                                }
+
+                                var prevScrollpos = window.pageYOffset;
+                                window.onscroll = function () {
+                                    var currentScrollPos = window.pageYOffset;
+                                    if (prevScrollpos > currentScrollPos) {
+                                        document.getElementById("nav").style.top = "0";
+                                    } else {
+                                        document.getElementById("nav").style.top = "-50%";
+                                    }
+                                    prevScrollpos = currentScrollPos;
+                                }
+</script>
+
+<script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("test1").style.top = "0";
+        } else {
+            document.getElementById("test1").style.top = "-50px";
+        }
+        prevScrollpos = currentScrollPos;
+    }
+
+</script>
+
+<script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("nav").style.top = "0";
+        } else {
+            document.getElementById("nav").style.top = "-15%";
+        }
+        prevScrollpos = currentScrollPos;
+    }
+</script>
+
+</body>
+</html>
+

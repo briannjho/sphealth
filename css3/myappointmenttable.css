@@ -1,0 +1,64 @@
+
+table{
+    width: 50%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+tr{
+    border-bottom: lpx solid #cbcbcb;
+}
+
+.appointmentsheader{
+    background:#5F9EA0;
+    color:white;
+    text-align: center;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    padding:10px;
+    font-size: 180%;
+}
+
+th{
+    font-weight: bold;
+    text-align: center;
+    background:#5F9EA0;
+    color: white;
+    font-size: 150%;
+}
+
+td{
+    border: none;
+    height: 100%;
+    padding: 2px;
+    text-align: center;
+    font-size: 120%
+}
+
+tr:hover {
+    background:#F5F5F5;
+}
+
+#container {
+    min-height: 100%;
+    width: 100%; 
+}
+
+.edit_btn {
+    text-decoration: none;
+    padding: 2px 5px;
+    background: green;
+    color: white;
+    border-radius: 3px; 
+}
+
+.del_btn {
+    text-decoration: none;
+    padding: 2px 5px;
+    color: white;
+    border-radius: 3px;
+    background: red; 
+}
+

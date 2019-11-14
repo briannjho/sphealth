@@ -1,0 +1,697 @@
+z<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<?php
+require_once './accountprocess.php';
+
+?>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Appointment</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Free HTML5 Website Template by gettemplates.co" />
+        <meta name="keywords" conte2nt="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+        <meta name="author" content="gettemplates.co" />
+
+        <!-- 
+        //////////////////////////////////////////////////////
+
+        FREE HTML5 TEMPLATE 
+        DESIGNED & DEVELOPED by FreeHTML5.co
+                
+        Website:   http://freehtml5.co/
+        Email:    info@freehtml5.co
+        Twitter:   http://twitter.com/fh5co
+        Facebook:   https://www.facebook.com/fh5co
+
+        //////////////////////////////////////////////////////
+        -->
+
+        <!-- Facebook and Twitter integration -->
+        <meta property="og:title" content=""/>
+        <meta property="og:image" content=""/>
+        <meta property="og:url" content=""/>
+        <meta property="og:site_name" content=""/>
+        <meta property="og:description" content=""/>
+        <meta name="twitter:title" content="" />
+        <meta name="twitter:image" content="" />
+        <meta name="twitter:url" content="" />
+        <meta name="twitter:card" content="" />
+
+        <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> -->
+        <!-- <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i" rel="stylesheet"> -->
+
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="css2/animate.css">
+        <!-- Icomoon Icon Fonts-->
+        <link rel="stylesheet" href="css2/icomoon.css">
+        <!-- Bootstrap  -->
+        <link rel="stylesheet" href="css2/bootstrap.css">
+
+        <!-- Flexslider  -->
+        <link rel="stylesheet" href="css2/flexslider.css">
+
+        <!-- Owl Carousel  -->
+        <link rel="stylesheet" href="css2/owl.carousel.min.css">
+        <link rel="stylesheet" href="css2/owl.theme.default.min.css">
+
+        <!-- Theme style  -->
+        <link rel="stylesheet" href="css2/style.css">
+
+        <!-- Modernizr JS -->
+        <script src="js2/modernizr-2.6.2.min.js"></script>
+        <!-- FOR IE9 below -->
+        <!--[if lt IE 9]>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+
+        <link rel="stylesheet"  href="css/tooplate-style.css">
+        <link rel="stylesheet"  href="css2/style.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">      
+        <link rel="stylesheet" type="text/css" href="fonts2/font-awesome-4.7.0/css/font-awesome.min.css">
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="fonts2/Linearicons-Free-v1.0.0/icon-font.min.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <style>
+            #main-nav {
+                background: transparent;
+                background-image: none!important;
+                width: 100%;
+            }
+
+
+            @media (max-width: 576px) {
+                .contact100-form {
+                    padding: 43px 15px 57px 117px;
+                }
+            }
+
+            @media (max-width: 480px) {
+                .contact100-form {
+                    padding: 43px 15px 57px 15px;
+                }
+
+                .label-input100 {
+                    text-align: left;
+                    position: unset;
+                    top: unset;
+                    left: unset;
+                    width: 100%;
+                    padding: 0 5px;
+                }
+            }
+
+            p{
+                font-weight: bold;
+            }
+
+            a:hover{
+                color: red;
+            }
+
+        </style>
+
+        <link rel="stylesheet" href="css4/open-iconic-bootstrap.min.css">
+        <link rel="stylesheet" href="css4/animate.css">
+
+        <link rel="stylesheet" href="css4/owl.carousel.min.css">
+        <link rel="stylesheet" href="css4/owl.theme.default.min.css">
+        <link rel="stylesheet" href="css4/magnific-popup.css">
+        <link rel="stylesheet" href="css4/aos.css">
+        <link rel="stylesheet" href="css4/ionicons.min.css">
+        <link rel="stylesheet" href="css4/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="css4/jquery.timepicker.css">
+        <link rel="stylesheet" href="css4/flaticon.css">
+        <link rel="stylesheet" href="css4/icomoon.css">
+        <link rel="stylesheet" href="css4/style.css">
+        <link rel="stylesheet" href="scss/style.css">
+
+
+
+    </head>
+    <div id="page">
+        <div class="header" id="nav">
+            <div class="container">
+                <nav class="navbar navbar-inverse" role="navigation">
+                    <div class="navbar-header" style="margin-left:2.5%">
+                        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="#" class="navbar-brand scroll-top">
+                            <div class="logo" style="margin-top:15%">
+                                <a href="home.php">
+                                    <img src="img/sp_health2.png">
+                                </a>        
+                            </div>
+                        </a>
+                    </div>
+                    <!--/.navbar-header-->
+                    <div id="main-nav" class="collapse navbar-collapse"  >
+                        <ul class="nav navbar-nav" >
+                            <li><a href="home.html" class="scroll-top" style="font-weight:bold"><text style="color: black">Home</text></a></li>
+                            <li><a href="about.html" style="font-weight:bold"><text style="color: black">About Us</text></a></li>
+                            <li><a href="appointment.html" style="font-weight:bold"><text style="color: black">Appointment</text></a></li>
+                            <li><a href="healthylifestyle.html" style="font-weight:bold" ><text style="color: black">Healthy Lifestyle</text></a></li>
+                            <li><a href="contactus.html" style="font-weight:bold"><text style="color: black">Contact Us</text></a></li>
+                        </ul>
+                    </div>
+                    <!--/.navbar-collapse-->
+                </nav>
+                <!--/.navbar-->
+            </div>
+            <!--/.container-->
+        </div>
+
+
+
+        <?php
+        $services = $icnumber = $date = $time = $message = "";
+
+        $update = false;
+        $lol = 0;
+
+        if (isset($_GET['edit'])) {
+            $lol = $_GET['edit'];
+            $update = true;
+
+            $sql = "SELECT icnumber,services,date,time,message FROM appointment WHERE appointment_id= '$lol' ";
+            $result = mysqli_query($conn, $sql);
+            $row = mysqli_fetch_row($result);
+
+            $icnumber = $row[0];
+            $services = $row[1];
+            $date = $row[2];
+            $time = $row[3];
+            $message = $row[4];
+        }
+
+        
+        ?>
+
+
+        <div class="section-heading" style="margin-top: 9.5%">
+            <h1 style="text-align: center; font-weight: bold">Appointment</h1>
+            <div class="line-dec" style="margin-top: -0.45%"></div>
+        </div>
+
+        <section style="margin-top: 5%" class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter" style="background-image: url(images/bg_3.jpg);" data-stellar-background-ratio="0.5">
+            <div class="container" >
+                <div class="row" >
+                    <div class="col-md-6 py-5 pr-md-5" >
+                        <div class="heading-section heading-section-white ftco-animate mb-5" >
+                            <span class="subheading">Consultation</span>
+                            <h2 class="mb-4">Affordable Consultation</h2>
+                            <p>All appointments are prioritized on the basis of medical need, and the team members who will care for you or your family have the expertise and skills to provide the best care possible.</p>
+                        </div>
+                        <form action="appointment.php" method="POST" class="appointment-form ftco-animate">
+                            <input type="hidden" name="id" value="<?php echo $lol; ?>">
+                            <div class="d-md-flex">
+                                <div class="form-group">
+                                    <input type="text" name="appointmentic" class="form-control" required placeholder="IC">
+                                </div>
+                            </div>
+                            <div class="d-md-flex">
+                                <div class="form-group">
+                                    <div class="form-field">
+                                        <div class="select-wrap">
+                                            <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                                            <text id="pleasela"style="color:white;"required >Choose Your Services</text>
+                                            <select name="services" id="services" required class="form-control" onclick="verify()"> 
+
+                                                <option style="color: black; display: none"><?php echo $services; ?></option>
+                                                <option onclick="verify()"style="color: black" id="neurology" value="Neurology">Neurology</option>
+                                                <option onclick="verify()"style="color: black" id="cardiology" value="Cardiology">Cardiology</option>
+                                                <option onclick="verify()"style="color: black" id="dental"value="Dental">Dental</option>
+                                                <option onclick="verify()"style="color: black" id="opthalmology"value="Ophthalmology">Ophthalmology</option>
+                                                <option onclick="verify()"style="color: black" id="others" value="Others">Other Services</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                            <div class="d-md-flex">
+                                <div class="form-group">
+                                    <div class="input-wrap">
+                                        <div class="icon"><span class="ion-md-calendar"></span></div>
+                                        <input type="text" name="date" class="form-control appointment_date" placeholder="Date">
+                                    </div>
+                                </div>
+                                <div class="form-group ml-md-4">
+                                    <div class="input-wrap">
+                                        <div class="icon"><span class="ion-ios-clock"></span></div>
+                                        <input type="text" name="time" class="form-control appointment_time" placeholder="Time">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-md-flex">
+                                <div class="form-group">
+                                    <textarea name="message"  cols="30" rows="2" class="form-control"required placeholder="Message"></textarea>
+                                </div>
+                                <div class="form-group ml-md-4">
+                                    <?php if ($update == true): ?>
+                                        <input type="submit" name="update" value="Update" class="btn btn-secondary py-3 px-4">
+                                    <?php else: ?>
+                                        <input type="submit" name="submit_appointment" value="Appointment" class="btn btn-secondary py-3 px-4" >
+                                    <?php endif ?>
+
+                                </div>
+                            </div>
+
+                            <!--      
+                            -->
+                        </form>
+                    </div>
+                    <div class="col-lg-6 p-5 bg-counter aside-stretch">
+                        <h3 class="vr">About SP.Care Facts</h3>
+                        <div class="row pt-4 mt-1">
+                            <div class="col-md-6 d-flex justify-content-center counter-wrap ftco-animate">
+                                <div class="block-18 p-5 bg-light">
+                                    <div class="text">
+                                        <strong class="number" data-number="30">0</strong>
+                                        <span>Years of Experienced</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 d-flex justify-content-center counter-wrap ftco-animate">
+                                <div class="block-18 p-5 bg-light">
+                                    <div class="text">
+                                        <strong class="number" data-number="4500">0</strong>
+                                        <span>Happy Patients</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 d-flex justify-content-center counter-wrap ftco-animate">
+                                <div class="block-18 p-5 bg-light">
+                                    <div class="text">
+                                        <strong class="number" data-number="84">0</strong>
+                                        <span>Number of Doctors</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 d-flex justify-content-center counter-wrap ftco-animate">
+                                <div class="block-18 p-5 bg-light">
+                                    <div class="text">
+                                        <strong class="number" data-number="300">0</strong>
+                                        <span>Number of Staffs</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>    
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <footer id="fh5co-footer" role="contentinfo">
+            <div class="container">
+                <div class="row row-pb-md">
+                    <div class='col-md-1'></div>
+                    <div class="col-md-4 fh5co-widget">
+                        <h3>SP Health </h3>
+                        <p>Founded in 2019.SP Health is a leading medical health center, earning our patient's trust with exceptional medical talent and technology</p>
+                        <p>Staff by a team of 4 dedicated students from Singapore Polytechnic. Our team is highly skilled in the areas we serve.</p>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6 col-md-push-1">
+                        <ul class="fh5co-footer-links">
+                            <li><a href="home.php">Home</a></li>
+                            <li><a href="about.php">About Us</a></li>
+                            <li><a href="appointment.php">Appointment</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3 col-sm-4 col-xs-6 col-md-push-1">
+                        <ul class="fh5co-footer-links">
+                            <li><a href="healthylifestyle.php">Healthy Lifestyle</a></li>
+                            <li><a href="contactus.php">Contact Us</a></li>
+                            <li><a href="profile_page.php">Profile</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
+                        <ul class="fh5co-footer-links">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+    <div class="gototop js-top">
+        <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js2/jquery.min.js"></script>
+    <!-- jQuery Easing -->
+    <script src="js2/jquery.easing.1.3.js"></script>
+    <!-- Bootstrap -->
+    <script src="js2/bootstrap.min.js"></script>
+    <!-- Waypoints -->
+    <
+    script src="js2/jquery.waypoints.min.js"></script>
+<!-- Carousel -->
+<script src="js2/owl.carousel.min.js"></script>
+<!-- countTo -->
+<script src="js2/jquery.countTo.js"></script>
+<!-- Flexslider -->
+<script src="js2/jquery.flexslider-min.js"></script>
+
+<!-- Main -->
+<script src="js2/main.js"></script>
+
+<script>
+                                                    // Get the modal
+                                                    var modal = document.getElementById('id01');
+
+                                                    // When the user clicks anywhere outside of the modal, close it
+                                                    window.onclick = function (event) {
+                                                        if (event.target == modal) {
+                                                            modal.style.display = "none";
+                                                        }
+                                                    }
+
+                                                    var prevScrollpos = window.pageYOffset;
+                                                    window.onscroll = function () {
+                                                        var currentScrollPos = window.pageYOffset;
+                                                        if (prevScrollpos > currentScrollPos) {
+                                                            document.getElementById("nav").style.top = "0";
+                                                        } else {
+                                                            document.getElementById("nav").style.top = "-50%";
+                                                        }
+                                                        prevScrollpos = currentScrollPos;
+                                                    }
+</script>
+
+
+
+<script src="js5/jquery.min.js"></script>
+<script src="js5/jquery-migrate-3.0.1.min.js"></script>
+<script src="js5/popper.min.js"></script>
+<script src="js5/bootstrap.min.js"></script>
+<script src="js5/jquery.easing.1.3.js"></script>
+<script src="js5/jquery.waypoints.min.js"></script>
+<script src="js5/jquery.stellar.min.js"></script>
+<script src="js5/owl.carousel.min.js"></script>
+<script src="js5/jquery.magnific-popup.min.js"></script>
+<script src="js5/aos.js"></script>
+<script src="js5/jquery.animateNumber.min.js"></script>
+<script src="js5/bootstrap-datepicker.js"></script>
+<script src="js5/jquery.timepicker.min.js"></script>
+<script src="js5/scrollax.min.js"></script>
+
+<script>
+                                                    AOS.init({
+                                                        duration: 800,
+                                                        easing: 'slide'
+                                                    });
+
+                                                    (function ($) {
+
+                                                        "use strict";
+
+
+
+                                                        var fullHeight = function () {
+
+                                                            $('.js-fullheight').css('height', $(window).height());
+                                                            $(window).resize(function () {
+                                                                $('.js-fullheight').css('height', $(window).height());
+                                                            });
+
+                                                        };
+                                                        fullHeight();
+
+                                                        // loader
+                                                        var loader = function () {
+                                                            setTimeout(function () {
+                                                                if ($('#ftco-loader').length > 0) {
+                                                                    $('#ftco-loader').removeClass('show');
+                                                                }
+                                                            }, 1);
+                                                        };
+                                                        loader();
+
+                                                        // Scrollax
+                                                        $.Scrollax();
+
+                                                        var carousel = function () {
+                                                            $('.home-slider').owlCarousel({
+                                                                loop: true,
+                                                                autoplay: true,
+                                                                margin: 0,
+                                                                animateOut: 'fadeOut',
+                                                                animateIn: 'fadeIn',
+                                                                nav: false,
+                                                                autoplayHoverPause: false,
+                                                                items: 1,
+                                                                navText: ["<span class='ion-md-arrow-back'></span>", "<span class='ion-chevron-right'></span>"],
+                                                                responsive: {
+                                                                    0: {
+                                                                        items: 1
+                                                                    },
+                                                                    600: {
+                                                                        items: 1
+                                                                    },
+                                                                    1000: {
+                                                                        items: 1
+                                                                    }
+                                                                }
+                                                            });
+                                                            $('.carousel-testimony').owlCarousel({
+                                                                autoplay: true,
+                                                                center: true,
+                                                                loop: true,
+                                                                items: 1,
+                                                                margin: 30,
+                                                                stagePadding: 0,
+                                                                nav: false,
+                                                                navText: ['<span class="ion-ios-arrow-back">', '<span class="ion-ios-arrow-forward">'],
+                                                                responsive: {
+                                                                    0: {
+                                                                        items: 1
+                                                                    },
+                                                                    600: {
+                                                                        items: 1
+                                                                    },
+                                                                    1000: {
+                                                                        items: 1
+                                                                    }
+                                                                }
+                                                            });
+
+                                                        };
+                                                        carousel();
+
+
+
+                                                        $('#dropdown04').on('show.bs.dropdown', function () {
+                                                            console.log('show');
+                                                        });
+
+                                                        // scroll
+                                                        var scrollWindow = function () {
+                                                            $(window).scroll(function () {
+                                                                var $w = $(this),
+                                                                        st = $w.scrollTop(),
+                                                                        navbar = $('.ftco_navbar'),
+                                                                        sd = $('.js-scroll-wrap');
+
+                                                                if (st > 150) {
+                                                                    if (!navbar.hasClass('scrolled')) {
+                                                                        navbar.addClass('scrolled');
+                                                                    }
+                                                                }
+                                                                if (st < 150) {
+                                                                    if (navbar.hasClass('scrolled')) {
+                                                                        navbar.removeClass('scrolled sleep');
+                                                                    }
+                                                                }
+                                                                if (st > 350) {
+                                                                    if (!navbar.hasClass('awake')) {
+                                                                        navbar.addClass('awake');
+                                                                    }
+
+                                                                    if (sd.length > 0) {
+                                                                        sd.addClass('sleep');
+                                                                    }
+                                                                }
+                                                                if (st < 350) {
+                                                                    if (navbar.hasClass('awake')) {
+                                                                        navbar.removeClass('awake');
+                                                                        navbar.addClass('sleep');
+                                                                    }
+                                                                    if (sd.length > 0) {
+                                                                        sd.removeClass('sleep');
+                                                                    }
+                                                                }
+                                                            });
+                                                        };
+                                                        scrollWindow();
+
+
+                                                        var counter = function () {
+
+                                                            $('#section-counter').waypoint(function (direction) {
+
+                                                                if (direction === 'down' && !$(this.element).hasClass('ftco-animated')) {
+
+                                                                    var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',')
+                                                                    $('.number').each(function () {
+                                                                        var $this = $(this),
+                                                                                num = $this.data('number');
+                                                                        console.log(num);
+                                                                        $this.animateNumber(
+                                                                                {
+                                                                                    number: num,
+                                                                                    numberStep: comma_separator_number_step
+                                                                                }, 7000
+                                                                                );
+                                                                    });
+
+                                                                }
+
+                                                            }, {offset: '95%'});
+
+                                                        }
+                                                        counter();
+
+                                                        var contentWayPoint = function () {
+                                                            var i = 0;
+                                                            $('.ftco-animate').waypoint(function (direction) {
+
+                                                                if (direction === 'down' && !$(this.element).hasClass('ftco-animated')) {
+
+                                                                    i++;
+
+                                                                    $(this.element).addClass('item-animate');
+                                                                    setTimeout(function () {
+
+                                                                        $('body .ftco-animate.item-animate').each(function (k) {
+                                                                            var el = $(this);
+                                                                            setTimeout(function () {
+                                                                                var effect = el.data('animate-effect');
+                                                                                if (effect === 'fadeIn') {
+                                                                                    el.addClass('fadeIn ftco-animated');
+                                                                                } else if (effect === 'fadeInLeft') {
+                                                                                    el.addClass('fadeInLeft ftco-animated');
+                                                                                } else if (effect === 'fadeInRight') {
+                                                                                    el.addClass('fadeInRight ftco-animated');
+                                                                                } else {
+                                                                                    el.addClass('fadeInUp ftco-animated');
+                                                                                }
+                                                                                el.removeClass('item-animate');
+                                                                            }, k * 50, 'easeInOutExpo');
+                                                                        });
+
+                                                                    }, 100);
+
+                                                                }
+
+                                                            }, {offset: '95%'});
+                                                        };
+                                                        contentWayPoint();
+
+
+                                                        // magnific popup
+                                                        $('.image-popup').magnificPopup({
+                                                            type: 'image',
+                                                            closeOnContentClick: true,
+                                                            closeBtnInside: false,
+                                                            fixedContentPos: true,
+                                                            mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+                                                            gallery: {
+                                                                enabled: true,
+                                                                navigateByImgClick: true,
+                                                                preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+                                                            },
+                                                            image: {
+                                                                verticalFit: true
+                                                            },
+                                                            zoom: {
+                                                                enabled: true,
+                                                                duration: 300 // don't foget to change the duration also in CSS
+                                                            }
+                                                        });
+
+                                                        $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+                                                            disableOn: 700,
+                                                            type: 'iframe',
+                                                            mainClass: 'mfp-fade',
+                                                            removalDelay: 160,
+                                                            preloader: false,
+
+                                                            fixedContentPos: false
+                                                        });
+
+
+                                                        $('.appointment_date').datepicker({
+                                                            'format': 'm/d/yyyy',
+                                                            'autoclose': true
+                                                        });
+
+                                                        $('.appointment_time').timepicker();
+
+
+
+
+                                                    })(jQuery);
+
+</script>  
+
+<script>
+    var cardiology = document.getElementById("cardiology").value;
+    var dental = document.getElementById("dental").value;
+    var opthalmology = document.getElementById("opthalmology");
+    var others = document.getElementById("others");
+    var services = document.getElementById("services");
+
+    if (dental == <?php echo $services; ?>) {
+        var services = document.getElementById("services");
+        services.options[services.options.selectedIndex].selected = true;
+        services.option[services.options.selectedIndex].seleceted = true;
+
+    }
+</script>
+
+<script>
+
+    function verify() {
+
+        var please = document.getElementById('pleasela');
+
+        please.style.display = "none";
+
+
+
+
+    }
+</script>
+</body>
+</html>
+
+
