@@ -299,7 +299,21 @@ ryone with kindness, respect and dignity - the way I want to be treated</strong>
 
         <!-- Main -->
         <script src="js2/main.js"></script>
-
+        
+        <script>
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function () {
+                var currentScrollPos = window.pageYOffset;
+                if (prevScrollpos > currentScrollPos) {
+                    document.getElementById("test1").style.top = "0";
+                } else {
+                    document.getElementById("test1").style.top = "-50px";
+                }
+                prevScrollpos = currentScrollPos;
+            }
+        
+        </script>
+        
         <script>
             var prevScrollpos = window.pageYOffset;
             window.onscroll = function () {
@@ -312,6 +326,6 @@ ryone with kindness, respect and dignity - the way I want to be treated</strong>
                 prevScrollpos = currentScrollPos;
             }
         </script>
-
+        
     </body>
 </html>
